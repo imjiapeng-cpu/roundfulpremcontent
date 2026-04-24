@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-build:
+    # Don't loop the workflow on the bot's auto-commit.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need full ref + write token so we can push the regenerated manifest back.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Validate content
+        run: python scripts/validate.py
+
+      - name: Rebuild manifest.json
+        run: python scripts/build_manifest.py
+
+      - name: Commit regenerated manifest if changed
+        # Only push back on main; on feature branches just fail loudly if drifted.
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "ci: rebuild manifest.json"
+          git push
+
+      - name: Fail if manifest drifted on a non-main branch
+        if: github.ref != 'refs/heads/main' || github.event_name != 'push'
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json is in sync."
+          else
+            echo "::error::manifest.json is out of sync with content/. Run 'python scripts/build_manifest.py' locally and commit the result."
+            git --no-pager diff -- manifest.json
+            exit 1
+          fi

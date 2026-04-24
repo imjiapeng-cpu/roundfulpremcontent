@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-24T22:35:07Z",
+  "minAppVersion": "1.4.0",
+  "articles": [
+    {
+      "id": "001-sample",
+      "order": 100,
+      "tier": "free",
+      "category": "Science",
+      "minutesRead": 4,
+      "updatedAt": "2026-04-24",
+      "translations": {
+        "en": {
+          "title": "Sample article",
+          "summary": "A one-line teaser shown in the Insights list. Replace this when you publish a real article.",
+          "path": "content/en/001-sample.md"
+        },
+        "zh-Hans": {
+          "title": "示例文章",
+          "summary": "在「探索」列表里展示的一句简介。发布正式文章时请替换这一行。",
+          "path": "content/zh-Hans/001-sample.md"
+        }
+      }
+    }
+  ]
+}

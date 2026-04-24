@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://roundful.app/schemas/manifest.schema.json",
+  "title": "Roundful premium-content manifest",
+  "description": "The contract between this repo and the iOS app. The app fetches manifest.json once per launch (cached ~1h, stale-while-revalidate) to learn what additional articles exist without paying per-article HTTP. Body .md files are fetched lazily when the user taps an article.",
+  "type": "object",
+  "required": ["version", "generatedAt", "minAppVersion", "articles"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Schema version. Bump only on breaking changes. Apps ignore manifests with a version they don't understand."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp stamped by build_manifest.py. Ends with 'Z'."
+    },
+    "minAppVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Minimum iOS app version (semver) that understands the feature set used by articles in this manifest. Older apps will ignore this manifest."
+    },
+    "articles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/article" }
+    }
+  },
+  "$defs": {
+    "article": {
+      "type": "object",
+      "required": [
+        "id",
+        "order",
+        "tier",
+        "category",
+        "minutesRead",
+        "updatedAt",
+        "translations"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable identifier. Matches the .md filename stem. 3-digit numeric prefix + kebab-case slug, e.g. '001-meal-timing'."
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 100,
+          "description": "Sort key in the Insights list. 1-99 reserved for in-app bundled articles; remote articles start at 100."
+        },
+        "tier": {
+          "type": "string",
+          "enum": ["free", "premium"],
+          "description": "App may gate 'premium' behind an entitlement. All articles ship as 'free' for now."
+        },
+        "category": {
+          "type": "string",
+          "enum": ["Method", "Reference", "Science", "Mastery", "Story"],
+          "description": "Free-form tag; v1 sticks to the five existing app categories."
+        },
+        "minutesRead": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Author's estimate of reading time in minutes."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "YYYY-MM-DD. Used by the app for per-article cache busting. Bump this when you edit the body."
+        },
+        "translations": {
+          "type": "object",
+          "required": ["en"],
+          "additionalProperties": { "$ref": "#/$defs/translation" },
+          "properties": {
+            "en": { "$ref": "#/$defs/translation" },
+            "zh-Hans": { "$ref": "#/$defs/translation" }
+          },
+          "description": "Keyed by BCP-47 locale. 'en' is required; 'zh-Hans' strongly recommended. The app falls back to 'en' for any missing locale."
+        }
+      }
+    },
+    "translation": {
+      "type": "object",
+      "required": ["title", "summary", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display title. Pulled from frontmatter by build_manifest.py."
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "One-line teaser for the list view. Keep under ~120 chars; hard-capped at 200."
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^content/[^/]+/[0-9]{3}-[a-z0-9-]+\\.md$",
+          "description": "Path to the body .md relative to the repo root. The app prepends the Pages base URL."
+        }
+      }
+    }
+  }
+}
