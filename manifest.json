@@ -4,22 +4,62 @@
   "minAppVersion": "1.4.0",
   "articles": [
     {
-      "id": "001-sample",
-      "order": 100,
+      "id": "001-stay-hydrated",
+      "order": 101,
       "tier": "free",
       "category": "Science",
-      "minutesRead": 4,
-      "updatedAt": "2026-04-24",
+      "minutesRead": 5,
+      "updatedAt": "2026-04-26",
       "translations": {
         "en": {
-          "title": "Sample article",
-          "summary": "A one-line teaser shown in the Insights list. Replace this when you publish a real article.",
-          "path": "content/en/001-sample.md"
+          "title": "Facts on Fluids: How to Stay Hydrated",
+          "summary": "Your body is about 60% water — learn why hydration matters, how much you actually need, and simple daily habits to stay ahead of dehydration.",
+          "path": "content/en/001-stay-hydrated.md"
         },
         "zh-Hans": {
-          "title": "示例文章",
-          "summary": "在「探索」列表里展示的一句简介。发布正式文章时请替换这一行。",
-          "path": "content/zh-Hans/001-sample.md"
+          "title": "关于补水：如何保持身体水分充足",
+          "summary": "你的身体约有 60% 是水分——了解补水为何如此重要、你每天真正需要多少水，以及帮助你保持水分平衡的简单日常习惯。",
+          "path": "content/zh-Hans/001-stay-hydrated.md"
+        }
+      }
+    },
+    {
+      "id": "002-swimming",
+      "order": 102,
+      "tier": "free",
+      "category": "Science",
+      "minutesRead": 6,
+      "updatedAt": "2026-04-26",
+      "translations": {
+        "en": {
+          "title": "Why Swimming Might Be the Best Exercise Out There",
+          "summary": "Low impact, full body, great for heart health and mental wellbeing — here's why exercise researchers keep pointing to swimming as one of the most complete workouts you can do.",
+          "path": "content/en/002-swimming.md"
+        },
+        "zh-Hans": {
+          "title": "为什么游泳可能是最好的运动",
+          "summary": "低冲击、全身锻炼、对心血管和心理健康都大有裨益——运动科学研究者为何一再将游泳列为最全面的锻炼方式之一。",
+          "path": "content/zh-Hans/002-swimming.md"
+        }
+      }
+    },
+    {
+      "id": "003-dietary-fats",
+      "order": 103,
+      "tier": "free",
+      "category": "Science",
+      "minutesRead": 7,
+      "updatedAt": "2026-04-26",
+      "translations": {
+        "en": {
+          "title": "Dietary Fat: What's Actually Good for You",
+          "summary": "Fat isn't the enemy — but not all fats are equal. A science-backed guide to saturated, unsaturated, and trans fats, and how to think about them in your daily diet.",
+          "path": "content/en/003-dietary-fats.md"
+        },
+        "zh-Hans": {
+          "title": "认识膳食脂肪：什么才是真正对你有益的",
+          "summary": "脂肪并不是敌人——但并非所有脂肪都一样。一份基于科学的指南，带你了解饱和脂肪、不饱和脂肪与反式脂肪的区别，以及如何在日常饮食中做出更明智的选择。",
+          "path": "content/zh-Hans/003-dietary-fats.md"
         }
       }
     }
