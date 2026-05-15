@@ -6,10 +6,12 @@ category: Science
 minutesRead: 6
 order: 102
 tier: free
-updatedAt: 2026-04-26
+updatedAt: 2026-05-14
 ---
 
 # 为什么游泳可能是最好的运动
+
+> **参考来源：** 本文所述的健康益处取自 [美国 CDC](https://www.cdc.gov/healthywater/swimming/swimmers/health_benefits_water_exercise.html) 与 [梅奥诊所](https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/aquatic-exercise/art-20546802)。完整来源见本文末尾。
 
 跑步、骑车、举重——这些都是有充分证据支持的优质运动方式。但在运动科学领域，有一项运动因其在身心健康方面的全面优势而不断被研究者提及，那就是游泳。无论你是坚持游圈的泳池常客，还是从未认真考虑过游泳的人，了解游泳为何堪称近乎理想的运动方式，都是值得的。
 
@@ -65,4 +67,10 @@ updatedAt: 2026-04-26
 
 ---
 
-*资料来源：西弗吉尼亚大学健康科学中心，《游泳可能是最好的运动——原因在此》。运动生理学评论引自米奇·洛马克斯（Mitch Lomax）。相关研究涵盖游泳与心血管健康、心理健康及呼吸功能的已发表文献。*
+## 参考来源
+
+> [美国疾病控制与预防中心（CDC）。*Health Benefits of Water-based Exercise（水中运动的健康益处）。*](https://www.cdc.gov/healthywater/swimming/swimmers/health_benefits_water_exercise.html)
+
+> [梅奥诊所。*Aquatic exercise（水中运动）。*](https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/aquatic-exercise/art-20546802)
+
+本文的辅助证据来自关于游泳与心血管健康、心理健康及呼吸功能的已发表研究文献。

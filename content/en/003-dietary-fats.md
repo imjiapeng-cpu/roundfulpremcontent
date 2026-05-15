@@ -6,10 +6,12 @@ category: Science
 minutesRead: 7
 order: 103
 tier: free
-updatedAt: 2026-04-26
+updatedAt: 2026-05-14
 ---
 
 # Dietary Fat: What's Actually Good for You
+
+> **Sources & references:** this guide draws on the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550), the [American Heart Association](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats), and the [World Health Organization](https://www.who.int/news-room/fact-sheets/detail/healthy-diet). Full references at the end of this article.
 
 For decades, dietary fat was cast as a primary villain in nutritional health — something to be minimised, reduced, and avoided. That picture has since been substantially revised. The evidence now tells a more nuanced story: fat is an essential macronutrient that serves critical biological functions, and the *type* of fat matters far more than the total amount. Understanding the different categories of dietary fat — and what the research actually says about each — is foundational to making good food choices.
 
@@ -78,4 +80,10 @@ Dietary fat is essential, nuanced, and worth understanding well beyond the simpl
 
 ---
 
-*Sources: Mayo Clinic, "Dietary fats: Know which types to choose," Mayo Clinic Healthy Lifestyle — Nutrition and Healthy Eating (mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550). Supporting guidance drawn from the American Heart Association dietary fat recommendations and the World Health Organization guidelines on fat intake.*
+## Sources & references
+
+> [Mayo Clinic. *Dietary fats: Know which types to choose.*](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550)
+
+> [American Heart Association. *Dietary Fats.*](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats)
+
+> [World Health Organization. *Healthy diet.*](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)

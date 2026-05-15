@@ -6,10 +6,12 @@ category: Science
 minutesRead: 5
 order: 101
 tier: free
-updatedAt: 2026-04-26
+updatedAt: 2026-05-14
 ---
 
 # Facts on Fluids: How to Stay Hydrated
+
+> **Sources & references:** hydration guidance in this article follows the [U.S. National Academies of Sciences](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk) Dietary Reference Intakes and the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256). Full references at the end of this article.
 
 Water is the most essential nutrient your body requires — and yet most people routinely under-consume it. Whether you're training, working at a desk, or simply moving through a warm day, maintaining proper fluid balance has a direct impact on your energy, mood, focus, and physical performance.
 
@@ -69,4 +71,10 @@ Staying well hydrated doesn't require any special products or complex routines. 
 
 ---
 
-*Sources: Canadian Department of National Defence, Western Sentinel, "Facts on Fluids: How to Stay Hydrated" (August 2021). General fluid intake recommendations align with guidance from Health Canada and the U.S. National Academies of Sciences, Engineering, and Medicine.*
+## Sources & references
+
+> [National Academies of Sciences, Engineering, and Medicine. *Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate.*](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk)
+
+> [Mayo Clinic. *Water: How much should you drink every day?*](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256)
+
+The 3.7 L / 2.7 L daily total-fluid figures are the Adequate Intake values set by the U.S. National Academies. General fluid-intake guidance in this article also aligns with Health Canada recommendations.

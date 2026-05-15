@@ -6,10 +6,12 @@ category: Science
 minutesRead: 5
 order: 101
 tier: free
-updatedAt: 2026-04-26
+updatedAt: 2026-05-14
 ---
 
 # 关于补水：如何保持身体水分充足
+
+> **参考来源：** 本文的补水指导依据 [美国国家科学院](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk) 的膳食参考摄入量与 [梅奥诊所](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256)。完整来源见本文末尾。
 
 水是人体最不可缺少的营养素，然而大多数人日常饮水量严重不足。无论是在运动、伏案工作，还是仅仅在温热的环境中活动，保持良好的体液平衡都会直接影响你的精力、情绪、注意力和身体表现。
 
@@ -69,4 +71,10 @@ updatedAt: 2026-04-26
 
 ---
 
-*资料来源：加拿大国防部西部哨兵报（Western Sentinel），《关于液体的知识：如何保持水分充足》（2021 年 8 月）。每日液体摄入建议与加拿大卫生部及美国国家科学院的相关指南一致。*
+## 参考来源
+
+> [美国国家科学院（National Academies of Sciences, Engineering, and Medicine）。*Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate（水、钾、钠、氯及硫酸盐膳食参考摄入量）。*](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk)
+
+> [梅奥诊所。*Water: How much should you drink every day?（水：每天该喝多少？）*](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256)
+
+文中 3.7 升 / 2.7 升的每日总液体摄入数字，是美国国家科学院设定的"适宜摄入量"（Adequate Intake）值。本文的一般补水建议也与加拿大卫生部的指南一致。

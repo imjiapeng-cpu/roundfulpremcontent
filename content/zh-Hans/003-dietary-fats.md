@@ -6,10 +6,12 @@ category: Science
 minutesRead: 7
 order: 103
 tier: free
-updatedAt: 2026-04-26
+updatedAt: 2026-05-14
 ---
 
 # 认识膳食脂肪：什么才是真正对你有益的
+
+> **参考来源：** 本指南依据 [梅奥诊所](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550)、[美国心脏协会](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats) 与 [世界卫生组织](https://www.who.int/news-room/fact-sheets/detail/healthy-diet) 的资料。完整来源见本文末尾。
 
 数十年来，膳食脂肪一直被视为营养健康的头号"反派"——需要尽量减少甚至完全回避。然而，这一认知已被大量后续研究所修正。现有证据呈现出一幅更为细致的图景：脂肪是人体不可缺少的宏量营养素，承担着关键的生理功能，而脂肪的*种类*远比总摄入量更为重要。了解膳食脂肪的不同类型，以及研究对各类脂肪的真实结论，是做出明智饮食选择的基础。
 
@@ -78,4 +80,10 @@ updatedAt: 2026-04-26
 
 ---
 
-*资料来源：梅奥诊所，《膳食脂肪：了解应选择的类型》，梅奥诊所健康生活——营养与健康饮食（mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550）。辅助指导来源：美国心脏协会膳食脂肪建议及世界卫生组织脂肪摄入指南。*
+## 参考来源
+
+> [梅奥诊所。*Dietary fats: Know which types to choose（膳食脂肪：了解应选择的类型）。*](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550)
+
+> [美国心脏协会。*Dietary Fats（膳食脂肪）。*](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats)
+
+> [世界卫生组织。*Healthy diet（健康饮食）。*](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)
