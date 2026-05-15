@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# 認識膳食脂肪：什麼才是真正對你有益的
-
 > **參考來源：** 本指南依據 [梅奧診所](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550)、[美國心臟協會](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats) 與 [世界衛生組織](https://www.who.int/news-room/fact-sheets/detail/healthy-diet) 的資料。完整來源見本文末尾。
 
 數十年來，膳食脂肪一直被視為營養健康的頭號"反派"——需要儘量減少甚至完全迴避。然而，這一認知已被大量後續研究所修正。現有證據呈現出一幅更為細緻的圖景：脂肪是人體不可缺少的宏量營養素，承擔著關鍵的生理功能，而脂肪的*種類*遠比總攝入量更為重要。了解膳食脂肪的不同型別，以及研究對各類脂肪的真實結論，是做出明智飲食選擇的基礎。

@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# 為什麼游泳可能是最好的運動
-
 > **參考來源：** 本文所述的健康益處取自 [美國 CDC](https://www.cdc.gov/healthywater/swimming/swimmers/health_benefits_water_exercise.html) 與 [梅奧診所](https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/aquatic-exercise/art-20546802)。完整來源見本文末尾。
 
 跑步、騎車、舉重——這些都是有充分證據支援的優質運動方式。但在運動科學領域，有一項運動因其在身心健康方面的全面優勢而不斷被研究者提及，那就是游泳。無論你是堅持遊圈的泳池常客，還是從未認真考慮過游泳的人，了解游泳為何堪稱近乎理想的運動方式，都是值得的。

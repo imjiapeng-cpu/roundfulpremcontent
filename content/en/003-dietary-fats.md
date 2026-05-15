@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# Dietary Fat: What's Actually Good for You
-
 > **Sources & references:** this guide draws on the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fat/art-20045550), the [American Heart Association](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/dietary-fats), and the [World Health Organization](https://www.who.int/news-room/fact-sheets/detail/healthy-diet). Full references at the end of this article.
 
 For decades, dietary fat was cast as a primary villain in nutritional health — something to be minimised, reduced, and avoided. That picture has since been substantially revised. The evidence now tells a more nuanced story: fat is an essential macronutrient that serves critical biological functions, and the *type* of fat matters far more than the total amount. Understanding the different categories of dietary fat — and what the research actually says about each — is foundational to making good food choices.

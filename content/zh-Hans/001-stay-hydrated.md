@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# 关于补水：如何保持身体水分充足
-
 > **参考来源：** 本文的补水指导依据 [美国国家科学院](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk) 的膳食参考摄入量与 [梅奥诊所](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256)。完整来源见本文末尾。
 
 水是人体最不可缺少的营养素，然而大多数人日常饮水量严重不足。无论是在运动、伏案工作，还是仅仅在温热的环境中活动，保持良好的体液平衡都会直接影响你的精力、情绪、注意力和身体表现。

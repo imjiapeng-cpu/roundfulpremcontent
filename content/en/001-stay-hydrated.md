@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# Facts on Fluids: How to Stay Hydrated
-
 > **Sources & references:** hydration guidance in this article follows the [U.S. National Academies of Sciences](https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk) Dietary Reference Intakes and the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256). Full references at the end of this article.
 
 Water is the most essential nutrient your body requires — and yet most people routinely under-consume it. Whether you're training, working at a desk, or simply moving through a warm day, maintaining proper fluid balance has a direct impact on your energy, mood, focus, and physical performance.

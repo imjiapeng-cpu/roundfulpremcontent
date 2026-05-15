@@ -9,8 +9,6 @@ tier: free
 updatedAt: 2026-05-14
 ---
 
-# Why Swimming Might Be the Best Exercise Out There
-
 > **Sources & references:** the health benefits described here are drawn from the [CDC](https://www.cdc.gov/healthywater/swimming/swimmers/health_benefits_water_exercise.html) and the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/aquatic-exercise/art-20546802). Full references at the end of this article.
 
 Running, cycling, lifting weights — all are well-regarded exercises with genuine evidence behind them. But if one activity keeps surfacing in exercise science as offering an unusually complete package of physical and mental benefits, it's swimming. Whether you're a committed lap swimmer or someone who has never considered a pool seriously, the case for swimming as a near-ideal exercise is worth understanding.
