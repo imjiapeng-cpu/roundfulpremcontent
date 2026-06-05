@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-15T02:17:25Z",
+  "generatedAt": "2026-06-05T06:53:07Z",
   "minAppVersion": "1.4.0",
   "articles": [
     {
@@ -75,6 +75,31 @@
           "title": "認識膳食脂肪：什麼才是真正對你有益的",
           "summary": "脂肪並不是敵人——但並非所有脂肪都一樣。一份基於科學的指南，帶你了解飽和脂肪、不飽和脂肪與反式脂肪的區別，以及如何在日常飲食中做出更明智的選擇。",
           "path": "content/zh-Hant/003-dietary-fats.md"
+        }
+      }
+    },
+    {
+      "id": "104-calorie-macro-estimation",
+      "order": 104,
+      "tier": "premium",
+      "category": "Method",
+      "minutesRead": 7,
+      "updatedAt": "2026-06-04",
+      "translations": {
+        "en": {
+          "title": "How to Estimate Calories and Macros (and Where to Look Them Up)",
+          "summary": "Tracking is only as useful as the numbers you put in. A practical guide to estimating portions, finding reliable nutrition data, and avoiding the common errors that quietly throw your totals off.",
+          "path": "content/en/104-calorie-macro-estimation.md"
+        },
+        "zh-Hans": {
+          "title": "如何估算热量和宏量营养素（以及去哪里查这些数据）",
+          "summary": "记录的价值取决于输入数据的质量。一份实用指南，带你估算份量、找到可靠的营养数据来源，并避开那些悄悄让总数偏离的常见误区。",
+          "path": "content/zh-Hans/104-calorie-macro-estimation.md"
+        },
+        "zh-Hant": {
+          "title": "如何估算熱量和宏量營養素（以及去哪裡查這些數據）",
+          "summary": "記錄的價值取決於輸入數據的品質。一份實用指南，帶你估算份量、找到可靠的營養數據來源，並避開那些悄悄讓總數偏離的常見誤區。",
+          "path": "content/zh-Hant/104-calorie-macro-estimation.md"
         }
       }
     }
