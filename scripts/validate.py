@@ -175,7 +175,7 @@ def validate_repo() -> tuple[list[str], list[str]]:
                         f"but {v[field]!r} in {v['_path']}"
                     )
 
-    # Every article needs an en variant; missing zh-Hans is just a warning
+    # Every article needs an en variant; missing zh-Hans / zh-Hant are warnings
     for article_id, variants in by_id.items():
         locales = {v["_locale"] for v in variants}
         if "en" not in locales:
@@ -185,6 +185,11 @@ def validate_repo() -> tuple[list[str], list[str]]:
         if "zh-Hans" not in locales:
             warnings.append(
                 f"article id={article_id} is missing a `zh-Hans` variant "
+                f"(falling back to en in the iOS app)"
+            )
+        if "zh-Hant" not in locales:
+            warnings.append(
+                f"article id={article_id} is missing a `zh-Hant` variant "
                 f"(falling back to en in the iOS app)"
             )
 

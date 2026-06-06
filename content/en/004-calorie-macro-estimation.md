@@ -1,11 +1,11 @@
 ---
-id: 104-calorie-macro-estimation
+id: 004-calorie-macro-estimation
 title: "How to Estimate Calories and Macros (and Where to Look Them Up)"
 summary: Tracking is only as useful as the numbers you put in. A practical guide to estimating portions, finding reliable nutrition data, and avoiding the common errors that quietly throw your totals off.
 category: Method
 minutesRead: 7
 order: 104
-tier: premium
+tier: free
 updatedAt: 2026-06-04
 ---
 

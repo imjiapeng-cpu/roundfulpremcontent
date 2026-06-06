@@ -20,11 +20,12 @@ You don't need to think about JSON, YAML schemas, or CI to publish. Type markdow
 
 3. **Fill in the frontmatter and write the body.** Open the new file and edit the block between the two `---` lines, then write the body underneath. See the [cheat sheet](#frontmatter-cheat-sheet) below.
 
-4. **Repeat for `zh-Hans/`, then push.**
+4. **Repeat for `zh-Hans/` and `zh-Hant/`, then push.**
 
    ```bash
    cp content/zh-Hans/001-sample.md content/zh-Hans/NNN-your-slug.md
-   # edit it...
+   cp content/zh-Hant/001-sample.md content/zh-Hant/NNN-your-slug.md
+   # edit both...
    git add .
    git commit -m "Add article: <title>"
    git push
@@ -32,7 +33,7 @@ You don't need to think about JSON, YAML schemas, or CI to publish. Type markdow
 
    That's it. CI runs the validator, rebuilds `manifest.json`, and deploys to GitHub Pages. If anything is wrong, GitHub emails you and the deploy is blocked until it's fixed.
 
-> A `zh-Hans` translation is strongly recommended but optional. If you skip it, CI prints a warning but still deploys; the iOS app falls back to English for users on Simplified Chinese.
+> `zh-Hans` (Simplified Chinese) and `zh-Hant` (Traditional Chinese) translations are strongly recommended but optional. If you skip either, CI prints a warning but still deploys; the iOS app falls back to English.
 
 ---
 
@@ -59,7 +60,7 @@ Every `.md` file starts with this block. All fields are required.
 | `category` | `Science` | One of: `Method`, `Reference`, `Science`, `Mastery`, `Story`. |
 | `minutesRead` | `4` | Rough reading time in minutes. |
 | `order` | `102` | Sort key. Pick the next free number ≥ 100. Must be unique across the repo. |
-| `tier` | `free` | `free` or `premium`. Use `free` for now. |
+| `tier` | `free` | `free` or `premium`. Use `free` to match the existing convention. |
 | `updatedAt` | `2026-04-24` | `YYYY-MM-DD`. Bump this every time you edit the body. |
 
 For the full spec (including cross-locale rules and what the validator checks), see [`schema/frontmatter.md`](schema/frontmatter.md).
@@ -118,7 +119,7 @@ If a push fails, GitHub emails you with a link to the run. Click it; the validat
 - **Forgot to bump `updatedAt`** — the file goes out, but users on cached copies never see your changes. The validator can't catch this; it's on you.
 - **`order` < 100** — reserved for bundled articles. Use ≥ 100.
 - **`id` doesn't match filename** — file is `102-meal-timing.md` but frontmatter says `id: 102-meal-time`. The validator catches this.
-- **Missing `zh-Hans`** — warning only. CI deploys, app falls back to English. Add the translation when you have it.
+- **Missing `zh-Hans` or `zh-Hant`** — warning only. CI deploys, app falls back to English. Add the translation when you have it.
 - **No trailing newline** — most editors add one automatically. If yours doesn't, hit Enter at the end of the file before saving.
 - **Used a category that doesn't exist** — must be one of the five listed above. Adding new categories requires an iOS app change too, so don't.
 
@@ -146,7 +147,9 @@ Both scripts work with Python 3.11+. The only dependency is `pyyaml`.
 ├── manifest.json             ← generated, don't hand-edit
 ├── content/
 │   ├── en/                   ← English articles
-│   └── zh-Hans/              ← Simplified Chinese articles
+│   ├── zh-Hans/              ← Simplified Chinese articles
+│   └── zh-Hant/              ← Traditional Chinese articles
+├── drafts/                   ← staging area, ignored by CI; see drafts/README.md
 ├── images/                   ← shared images, language-agnostic
 ├── schema/
 │   ├── manifest.schema.json  ← contract with the iOS app

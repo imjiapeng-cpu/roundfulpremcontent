@@ -37,12 +37,12 @@ The frontmatter block is everything between the first two `---` lines. The body 
 | `category` | enum | yes | One of: `Method`, `Reference`, `Science`, `Mastery`, `Story`. |
 | `minutesRead` | int | yes | Author's estimate of reading time in minutes. Must be ≥ 1. |
 | `order` | int | yes | Sort key in the Insights list. Must be ≥ 100 (1–99 are reserved for the bundled in-app articles). Must be unique across the entire repo. |
-| `tier` | enum | yes | `free` or `premium`. Use `free` unless jess has explicitly told you otherwise. |
+| `tier` | enum | yes | `free` or `premium`. Use `free` to match the existing convention; remote articles are paywalled at the app layer regardless of this field. |
 | `updatedAt` | date | yes | `YYYY-MM-DD`. Used by the iOS app for per-article cache busting — bump this whenever you edit the body. |
 
 ## Cross-locale rules
 
-When the same article exists in multiple locales (e.g. both `content/en/001-sample.md` and `content/zh-Hans/001-sample.md`), the **shared** fields must match exactly across all variants:
+When the same article exists in multiple locales (e.g. `content/en/001-sample.md`, `content/zh-Hans/001-sample.md`, and `content/zh-Hant/001-sample.md`), the **shared** fields must match exactly across all variants:
 
 - `id`
 - `order`
@@ -61,8 +61,8 @@ If `validate.py` finds a mismatch on a shared field — for example, `001-sample
 ## Locale rules
 
 - Every article must have an `en` variant. Missing `en` is a hard error.
-- A `zh-Hans` variant is strongly recommended but optional. Missing `zh-Hans` is a warning, not a failure — the iOS app falls back to `en`.
-- New locales beyond `en` and `zh-Hans` can be added by creating a new directory under `content/` with the BCP-47 locale tag as its name (e.g. `content/ja/`). The manifest schema accepts any string key under `translations`, but the validator currently only knows about `en` and `zh-Hans`. Add new locales there if you start using them.
+- `zh-Hans` (Simplified Chinese) and `zh-Hant` (Traditional Chinese) variants are strongly recommended but optional. Missing either produces a warning, not a failure — the iOS app falls back to `en`.
+- New locales beyond `en`, `zh-Hans`, and `zh-Hant` can be added by creating a new directory under `content/` with the BCP-47 locale tag as its name (e.g. `content/ja/`). The manifest schema accepts any string key under `translations`. The validator only emits "missing variant" warnings for the three locales above; add others to `validate.py` if you start using them regularly.
 
 ## File rules
 
@@ -90,7 +90,7 @@ In order, the validator runs through:
 7. `category` is one of the five allowed values.
 8. `updatedAt` parses as `YYYY-MM-DD`.
 9. Shared fields agree across all locale variants of the same `id`.
-10. Every `id` has an `en` variant. Missing `zh-Hans` produces a warning.
+10. Every `id` has an `en` variant. Missing `zh-Hans` or `zh-Hant` produces a warning.
 11. Each file ends with a trailing newline.
 
 If any step fails, the validator exits non-zero and prints the offending file and field. CI catches this before the article ever reaches GitHub Pages.

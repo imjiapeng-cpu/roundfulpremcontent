@@ -1,11 +1,11 @@
 ---
-id: 104-calorie-macro-estimation
+id: 004-calorie-macro-estimation
 title: "如何估算熱量和宏量營養素（以及去哪裡查這些數據）"
 summary: 記錄的價值取決於輸入數據的品質。一份實用指南，帶你估算份量、找到可靠的營養數據來源，並避開那些悄悄讓總數偏離的常見誤區。
 category: Method
 minutesRead: 7
 order: 104
-tier: premium
+tier: free
 updatedAt: 2026-06-04
 ---
 
